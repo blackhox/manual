@@ -188,6 +188,6 @@ nibirud tx staking create-validator \
 
 Далее переводим на этот адрес любое кол-во токенов при помощи данной команды:
 
-nibirud tx staking delegate nibiruvaloper123456789 500000000game --from blackhox --chain-id nibiru-2000 --gas auto
+nibirud tx staking delegate nibiruvaloper123456789 500000000game --from <имя кошелька> --chain-id nibiru-2000 --gas auto
 
 После успешного выполнения данной команды, видим своего валидатора в активных.
