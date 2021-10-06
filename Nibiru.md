@@ -127,6 +127,24 @@ nibirud status | jq .sync_info
 
 Должен быть статус: "false"
 
+Более правильным и функциональным решением является написание специальных сервисных файлов (служб), в нашем случае это будет выглядешь вот так:
+
+sudo tee /etc/systemd/system/nibirud.service > /dev/null <<EOF
+[Unit]
+Description=Nibiru Full Node
+After=network-online.target
+
+[Service]
+User=$USER
+ExecStart=$(which nibirud) start
+Restart=always
+RestartSec=3
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
+EOF
+Хочу обратить внимание на переменную: User=$USER, обращаем внимание на то, от имени какого пользователя будет происходить заупуск.
 # 7. Создаем кошелек
 
 Если у вас уже был кошелек этого проекта, то его можно импортировать (восстановить), если кошелька не было, то его необходимо создать.
