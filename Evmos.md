@@ -157,7 +157,31 @@ EOF
                                                                
  evmosd status 2>&1 | jq
  
-  Если статус ##FALSE, то приступаем к созданию вадидатора:
+  Если статус ***FALSE***, то приступаем к созданию вадидатора:
   
+  ## 6. Создание валидатора
+  
+  Для создания валидатора выполняем следующие команды:
+  
+  evmosd tx staking create-validator \
+  --amount=1000000000000aphoton \
+  --pubkey=$(evmosd tendermint show-validator) \
+  --moniker="<имя ноды>" \
+  --chain-id=<chain_id> \
+  --commission-rate="0.10" \
+  --commission-max-rate="0.20" \
+  --commission-max-change-rate="0.01" \
+  --min-self-delegation="1000000" \
+  --gas="auto" \
+  --gas-prices="0.025aphoton" \
+  --from=<имя ключа>
                                                                
-                                                               
+Если транзация прошла успешно, можно себя поздравить с запуском ноды.
+
+Проверяем валидатора на наличие средств, отстутствие заключения и т.п.:
+  
+  ***evmosd query staking validator $(evmosd keys show BhkeyEv -a --bech val)***
+  
+  Так же, если эксплорер не работает, или неизвестен его адрес, можно проверить есть ли в общем списке ваш валидатор, выполнив команду:
+  
+***evmosd q staking validators -o json --limit=1000 | jq '.validators[] | select(.status=="BOND_STATUS_BONDED")' | jq -r '.tokens + " - " + .description.moniker' | sort -gr | nl***
