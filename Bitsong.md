@@ -1,13 +1,13 @@
-# 1.Подготовка ОС Linux к установке ноды
-### 1.1 Обновновляем пакеты и систему
+# 1.Preparing Linux OS for node installation
+# 1.1 We update packages and systems
 
 ***sudo apt update && sudo apt upgrade -y***
 
-# 1.2 Устанавливаем все необходимые пакеты и компоненты:
+# 1.2 Installing all the necessary packages and components
 
 ***sudo apt install wget curl jq make git build-essential cmake gcc pkg-config libssl-dev -y***
 
-Для правильной и более безопасной работы с ОС Linux, рекомендуется создавать отдельного пользователя и не работатать от имени root. Но в случае тестнетов, которые, как правило, длятся не более 1 месяца, я часто пользуюсь встроенной в систему администраторской учетной записью. Если вы решите создать отдельного пользователя и дать ему права на установку в системе, то это можно сделать с помощью следующих команд:
+For correct and safer work with Linux OS, it is recommended to create a separate user and not work as root. I often use the system's built-in administrator account. But if you decide to create a separate user and give him installation rights on the system, then this can be done using the following commands:
 
 ***adduser <имя пользователя>***
 
@@ -15,9 +15,9 @@
 
 ***su -l <имя пользователя>***
 
-Я не буду создавать нового пользователя и продолжу установку от имени root
+I will not create a new user and continue with the installation as root
 
-2. Устанавливаем GO
+# 2. Install GO
 Если ОС на сервере не "чистая" ранее ставились какие-то проекты, то рекомендуется сначала удалить все предыдущие версии:
 
 ***sudo rm -rf /usr/local/go***
@@ -30,7 +30,7 @@
 
 ***curl https://dl.google.com/go/go1.17.2.linux-amd64.tar.gz | sudo tar -C /usr/local -zxvf -***
 
-3. Экспортируем переменные:
+# 3. 
 
 ***cat <<'EOF' >>$HOME/.profile***
 
