@@ -9,28 +9,28 @@
 
 For correct and safer work with Linux OS, it is recommended to create a separate user and not work as root. I often use the system's built-in administrator account. But if you decide to create a separate user and give him installation rights on the system, then this can be done using the following commands:
 
-***adduser <имя пользователя>***
+***adduser <_user name_>***
 
-***usermod -aG sudo <имя пользователя>***
+***usermod -aG sudo <_user name_>***
 
-***su -l <имя пользователя>***
+***su -l <_user name_>***
 
 I will not create a new user and continue with the installation as root
 
 # 2. Install GO
-Если ОС на сервере не "чистая" ранее ставились какие-то проекты, то рекомендуется сначала удалить все предыдущие версии:
+If the OS on the server has previously installed some projects using GO, then it is recommended to first remove all previous versions:
 
 ***sudo rm -rf /usr/local/go***
 
-а затем установить необходимую версии GO.
+and then install the required version of GO.
 
-Для данного проекта необходим Go 1.17.0+
+Now the current versions are higher 1.17.0+
 
-Запустим скачивание, распаковку и установку GO:
+Let's start downloading, unpacking and installing GO:
 
 ***curl https://dl.google.com/go/go1.17.2.linux-amd64.tar.gz | sudo tar -C /usr/local -zxvf -***
 
-# 3. 
+# 3. Exporting variables
 
 ***cat <<'EOF' >>$HOME/.profile***
 
@@ -44,11 +44,11 @@ I will not create a new user and continue with the installation as root
 
 ***source $HOME/.profile***
 
-4. Проверяем коректность установки, запустим команду:
+4. We check the correctness of the installation:
 
 ***go version***
 
-В выводе должно быть:
+The output should contain:
 
 go version go1.17.2 linux/amd64
 
@@ -63,11 +63,11 @@ go version go1.17.2 linux/amd64
 
 ***bitsongd init <_NAME MONIKER_> --chain-id bitsong-2b***
 
-Скачаиваем правильный файл генезиса:
+Download the correct genesis file::
 
 ***wget https://github.com/bitsongofficial/networks/raw/master/bitsong-2b/genesis.json -O ~/.bitsongd/config/genesis.json***
 
-Редактируем конфигурационный файл config.toml, добавляем проверенные пиры:
+We edit the config.toml configuration file, add checked peers:
 
 P2P Configuration Options 
 
@@ -81,20 +81,20 @@ a62038142844828483dbf16fa6dd159f6857c81b@173.212.247.98:26656,e9fea0509b1a2d16a1
 
 ***seeds*** = ffa27441ca78a5d41a36f6d505b67a145fd54d8a@95.217.156.228:26656,efd52c1e56b460b1f37d73c8d2bd5f860b41d2ba@65.21.62.83:26656
 
-### Создание кошелька ###
+### Creating a wallet ###
 
 ***key bitsongd keys add YOUR-WALLET-NAME***
 
-***ОБАЗЯТЕЛЬНО записиваем мнемонику!!!!***
+***MANDATORY we write mnemonics!!!!***
 
-Если кошелек уже был ранее создан, то его можно восстановить при помощи такой команды и мнемоники:
+If the wallet has already been created, then it can be restored using this command and mnemonics:
 
 ***bitsongd keys add YOUR-WALLET-NAME --recover (it will ask your mnemonic)***
 
-### Установка Cosmosvisor ###
+### INSTALL Cosmosvisor ###
 
-Для автоматизации установки обновленный версий бинарных файлов, рекомендуетмся уставноить и использовать Cosmosvisor
-
+To automate the installation of updated versions of binaries, it is recommended to install and use Cosmosvisor
+  
 Download and install Cosmovisor
 
 ### cd ~ ###
@@ -190,24 +190,58 @@ EOF
 
  ***journalctl -u bitsongd -f***
                                                                 
-### Проверка синхронизации ноды:###
+### Checking node synchronization: ###
                                                                 
 ***bitsongd status 2>&1 | jq***
   
-или
+or
   
 ***curl -s localhost:26657/status | jq .result.sync_info.catching_up***
   
-Если результат выдается 
+If the result is issued 
 
 ***FALSE***
    
-можно приступать к созданию валидатора
+you can start creating a validator
   
   ### INSTALL VALIDATOR ###
   
-  Для выполнения транзации по созданию алидатора, необходимы токены проекта, поэтому сначала необходимо пополнить свой кошелек некоорым количеством токенов!!!
+ To complete the transaction to create an alidator, you need project tokens, so first you need to replenish your wallet with a certain amount of tokens!!!
   
+ You can check the balance of the wallet using the command:
   
+  ***bitsongd query bank balances <_wallet address_>***
+  
+  If there are available tokens on the balance, then we proceed to create a validator:
+ 
+  bitsongd tx staking create-validator \
+  
+--amount=10000000ubtsg \
+  
+--pubkey=$(bitsongd tendermint show-validator) \
+  
+--moniker= ***your name moniker*** \
+  
+--chain-id=bitsong-2b \
+  
+--commission-rate="0.1" \
+  
+--commission-max-rate="1.00" \
+  
+--commission-max-change-rate="1.00" \
+  
+--min-self-delegation="1" \
+  
+--gas="auto" \
+  
+--gas-adjustment="1.2" \
+  
+--gas-prices="0.025ubtsg" \
+  
+--from= ***name key***
+  
+If the transaction is successful, go to the block explorer and look for your validator:
+  
+https://bitsong.bigdipper.live/validators
 
 
