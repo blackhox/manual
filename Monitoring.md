@@ -71,3 +71,10 @@ for i in rules rules.d files_sd; do sudo chown -R prometheus:prometheus /etc/pro
 for i in rules rules.d files_sd; do sudo chmod -R 775 /etc/prometheus/${i}; done
 sudo chown -R prometheus:prometheus /var/lib/prometheus/
 ```
+Tell systemctl that we created the Prometheus service, add a symbolic link, run it and check the logs
+```
+sudo systemctl daemon-reload
+sudo systemctl enable prometheus
+sudo systemctl start prometheus
+sudo systemctl status prometheus
+```
