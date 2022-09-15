@@ -108,7 +108,7 @@ sudo apt install fail2ban -y
 ```
 sudo apt-get install -y apt-transport-https
 sudo apt-get install -y software-properties-common wget
-wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+wget -qO - https://packages.grafana.com/gpg.key | sudo apt-key add -
 ```
 **Now update your package repos**
 ```
