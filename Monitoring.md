@@ -267,10 +267,12 @@ Keep your token secure and store it safely, it can be used by anyone to control 
 For a description of the Bot API, see this page: https://core.telegram.org/bots/api
 ```
 **2. Create a Channel and retrieve the channel's chat ID**
+
 *Create a channel in telegram and name it whatever you like. e.g. MyCardanoMonitoring or similar
 *Invite @BotFather to that channel as admin
 *Type at least one message, this is very important
 *Get the Chat id:
+
 ```
 https://api.telegram.org/bot<YOUR API TOKE FROM ABOVE>/getUpdates
 {"ok":true,"result":[{"update_id":1112223334445,
