@@ -34,3 +34,8 @@ you will see the version numbers of installed programs: Prometheus and Promtool
 prometheus --version
 promtool --version
 ```
+Let's move some files like this:
+```
+sudo mv prometheus.yml /etc/prometheus/prometheus.yml
+sudo mv consoles/ console_libraries/ /etc/prometheus/
+```
