@@ -215,3 +215,8 @@ Restart the Prometheus service and it will start scraping data
 sudo systemctl stop prometheus
 sudo systemctl start prometheus
 ```
+## Configure your Cosmos Node ##
+We are almost done, the last step remains. Login to your Sentry or Cosmos SDK validator and then open the config.toml file.
+```
+nano ~/.project name/config/config.toml
+```
