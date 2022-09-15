@@ -28,3 +28,9 @@ tar xvf prometheus*.tar.gz
 cd prometheus*/
 sudo mv prometheus promtool /usr/local/bin/
 ```
+If you have successfully completed all the previous steps,
+you will see the version numbers of installed programs: Prometheus and Promtool
+```
+prometheus --version
+promtool --version
+```
