@@ -187,3 +187,7 @@ Upload the JSON file that you downloaded earlier and then select the Prometheus 
 Now you have a beautiful dashboard, but unfortunately it is not filled with any data yet.
 
 ![Grafana](https://miro.medium.com/max/700/1*3qr4vNRhx-wwCN2dWTfVAw.png "Empty")
+
+Now back to the Prometeus setup we talked about earlier.
+
+## Configure Prometheus ##
