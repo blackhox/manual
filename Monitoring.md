@@ -10,3 +10,6 @@ First of all, let's start the installation by updating the OS and installing sec
 It won't solve every possible security problem, but it's better than doing nothing at all.
 
 ***sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt install fail2ban -y***
+
+During the installation of updates to these packages, you may occasionally see a purple screen. Just press the ENTER button.
+After updating the Linux OS, create the prometheus user that will be used to run Prometheus.
