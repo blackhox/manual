@@ -235,4 +235,44 @@ sudo ufw enable
 ```
 Now restart your node and you are set! Go back to your Grafana dashboard and the data will begin to populate within a few minutes.
 
-### Config Telegrambot for grafana's alerts. ###
+### Config Telegrambot for grafana's alerts ###
+
+**1. Create bot**
+
+```
+Open Telegram and search for @BotFather user and message them the following:
+
+You
+/newbot 
+
+BotFather
+Alright, a new bot. How are we going to call it? Please choose a name for your bot.
+
+You
+TypeYourBotName
+
+BotFather
+Good. Now let's choose a username for your bot. It must end in `bot`. Like this, for example: TetrisBot or tetris_bot.
+
+You
+TypeYourBotNameBot
+
+BotFather
+Done! Congratulations on your new bot. You will find it at t.me/shelley_monitor_bot. You can now add a description, about section and profile picture for your bot, see /help for a list of commands. By the way, when you've finished creating your cool bot, ping our Bot Support if you want a better username for it. Just make sure the bot is fully operational before you do this.
+
+Use this token to access the HTTP API:
+99...:AA......TvF8
+Keep your token secure and store it safely, it can be used by anyone to control your bot.
+
+For a description of the Bot API, see this page: https://core.telegram.org/bots/api
+```
+**2. Create a Channel and retrieve the channel's chat ID**
+*Create a channel in telegram and name it whatever you like. e.g. MyCardanoMonitoring or similar
+*Invite @BotFather to that channel as admin
+*Type at least one message, this is very important
+*Get the Chat id:
+```
+https://api.telegram.org/bot<YOUR API TOKE FROM ABOVE>/getUpdates
+{"ok":true,"result":[{"update_id":1112223334445,
+"channel_post":{"message_id":1,"chat":{"id":-<YOUR_CHAT_ID>,"title":"ShelleyMonitoring","type":"channel"},"date":1576534122,"text":"/bot","entities":[{"offset":0,"length":4,"type":"bot_command"}]}}]}
+```
