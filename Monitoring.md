@@ -152,3 +152,5 @@ Go back to the Grafana page and then click on ```Configuration``` and then ```Da
 Now click on ```Add data source``` then select the Prometheus data source.
 
 ![Grafana](https://miro.medium.com/max/613/1*l0vn_tFh0Zk010EZUpc0ag.png "Add")
+
+![Grafana](https://miro.medium.com/max/700/1*3CIWWU4_C4E3pc3dK-L4Pw.png "Add")
