@@ -148,3 +148,5 @@ You need to download the JSON file.
 Go back to the Grafana page and then click on ```Configuration``` and then ```Data Sources```
 
 ![Grafana](https://miro.medium.com/max/414/1*g4cT7b2xGy119KzC7zedRA.png "Dashdoard")
+
+Now click on ```Add data source``` then select the Prometheus data source.
