@@ -191,3 +191,16 @@ Now you have a beautiful dashboard, but unfortunately it is not filled with any 
 Now back to the Prometeus setup we talked about earlier.
 
 ## Configure Prometheus ##
+
+Return to your Prometheus server and edit the prometheus.yml file.
+
+```
+sudo nano /etc/prometheus/prometheus.yml
+```
+Paste in the following parameters and the yml file should look like this
+```
+- job_name: project-testnet
+    static_configs:
+      - targets: ['node.ip.address.here:26660']
+```
+
