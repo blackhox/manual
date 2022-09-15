@@ -299,3 +299,10 @@ https://api.telegram.org/bot<YOUR API TOKE FROM ABOVE>/getUpdates
 - Click "Create Alert"
 - Edit the fields, see details below:
 ![Monitoring](https://user-images.githubusercontent.com/1113398/71247974-bc5f4d80-2311-11ea-962b-6cc5f2e6989d.png "Telegram")
+
+## Testing ##
+- For simple test you can stop node-exporter service for 5 minutes. It should trigger alert
+```
+systemctl stop node_exporter
+```
+![Monitoring](https://user-images.githubusercontent.com/50621007/161050843-889edc5e-4e27-4778-9010-b9e9e861cc74.png "Test")
