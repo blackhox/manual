@@ -113,3 +113,10 @@ echo "deb https://packages.grafana.com/enterprise/deb stable main" | sudo tee -a
 ```
 sudo apt-get update -y && sudo apt-get install grafana-enterprise -y && sudo apt-get upgrade -y
 ```
+Now let's start Grafana as a service:
+```
+sudo systemctl daemon-reload
+sudo systemctl enable grafana-server
+sudo systemctl start grafana-server
+sudo systemctl status grafana-server
+```
