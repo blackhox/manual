@@ -134,4 +134,5 @@ sudo ufw allow proto tcp from any to any port 22
 sudo ufw allow proto tcp from any to any port 3000
 sudo ufw enable
 ```
-
+Now open a web browser and navigate to http://your.grafana.ip.address:3000 and you should see the Grafana logo start to bounce as the page loads. Your username is admin and your password is admin. If you don’t see the screen below, then your firewall is probably not open on port 3000 or you made a mistake somewhere in the previous steps.
+![Grafana portal](https://miro.medium.com/max/580/1*T2Oul2EXu8GPAl7aoSUCMw.png "Portal")
