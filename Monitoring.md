@@ -129,4 +129,9 @@ If the installation was successful, you will see the following picture on the sc
 ![Grafana logs](https://miro.medium.com/max/700/1*IVTzT2D9cawk2rQq-HdwpA.png "Log")
 
 Just like the Prometeus server, let's configure the firewall. If you are not using port 22 then change the below command otherwise you will block access to your server.
+```
+sudo ufw allow proto tcp from any to any port 22
+sudo ufw allow proto tcp from any to any port 3000
+sudo ufw enable
+```
 
