@@ -99,17 +99,17 @@ Once we set up the Grafana server, we will also update it and install ```fail2ba
 ```
 sudo apt install fail2ban -y
 ```
-**Now install some dependencies for Grafana
+**Now install some dependencies for Grafana**
 ```
 sudo apt-get install -y apt-transport-https
 sudo apt-get install -y software-properties-common wget
 wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
 ```
-**Now update your package repos
+**Now update your package repos**
 ```
 echo "deb https://packages.grafana.com/enterprise/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
 ```
-**Install Grafana and upgrade your packages
+**Install Grafana and upgrade your packages**
 ```
 sudo apt-get update -y && sudo apt-get install grafana-enterprise -y && sudo apt-get upgrade -y
 ```
