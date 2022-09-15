@@ -181,3 +181,6 @@ Now click on ```Import``` and then ```Upload JSON File```
 Upload the JSON file that you downloaded earlier and then select the Prometheus datasource that you just set up and then click on the ```Import``` button.
 
 ![Grafana](https://miro.medium.com/max/700/1*GfSYK4w6a3b03KzSTrh9lg.png "Import")
+
+![Grafana](https://miro.medium.com/max/669/1*68zF81CGtDWG8pHIbP_eQA.png "Import")
+
