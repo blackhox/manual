@@ -234,3 +234,5 @@ sudo ufw allow proto tcp from any to any port 26660
 sudo ufw enable
 ```
 Now restart your node and you are set! Go back to your Grafana dashboard and the data will begin to populate within a few minutes.
+
+### Config Telegrambot for grafana's alerts. ###
