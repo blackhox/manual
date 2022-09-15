@@ -142,4 +142,5 @@ Once you log in, click on the little avatar icon on the bottom left of the scree
 
 After changing your password, open a new browser window and go here to download the standard Cosmos SDK Grafana toolbar. 
 You need to download the JSON file.
+
 ![Grafana](https://miro.medium.com/max/700/1*NwtCIAlPjraQTt34RNBXHg.png "Dashdoard")
