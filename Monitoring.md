@@ -174,4 +174,4 @@ Ok, that was fun. Now click on ```Dashboardand``` then ```Manage```
 
 ![Grafana](https://miro.medium.com/max/634/1*BmMOP3x4nsvi7pNEIv_Qtg.png "Manage")
 
-
+Now click on ```Import``` and then ```Upload JSON File```
