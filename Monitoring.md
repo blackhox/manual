@@ -204,3 +204,7 @@ Paste in the following parameters and the yml file should look like this
       - targets: ['node.ip.address.here:26660']
 ```
 
+The IP address must match the Cosmos SDK node you are collecting data from. It can be a sentry or a validator.
+
+![Grafana](https://miro.medium.com/max/700/1*QiVx2kyCQeOKgg2WBW6DCQ.png "SDK")
+
