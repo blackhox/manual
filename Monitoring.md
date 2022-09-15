@@ -220,3 +220,4 @@ We are almost done, the last step remains. Login to your Sentry or Cosmos SDK va
 ```
 nano ~/.project name/config/config.toml
 ```
+Hit ```PgDn``` on your keyboard to get to the very bottom of the file and then set ```prometheus=true```
