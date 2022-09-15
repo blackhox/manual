@@ -288,7 +288,7 @@ https://api.telegram.org/bot<YOUR API TOKE FROM ABOVE>/getUpdates
 - Select Telegram
 - Enable/disable settings you preger
 - Put Telegram API token to he fiel
-- Add chat ID (it starts with -, and that needs too)
+- Add chat ID
 - Click Test notification
 - Save it.
 ## Add alert Grafana ##
