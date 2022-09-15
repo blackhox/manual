@@ -291,3 +291,11 @@ https://api.telegram.org/bot<YOUR API TOKE FROM ABOVE>/getUpdates
 - Add chat ID (it starts with -, and that needs too)
 - Click Test notification
 - Save it.
+## Add alert Grafana ##
+- Go to dashboard
+- Select "Jormungandr Monitor"
+- Select "Jormungandr Last Block Height", ckicj edit
+- Click Alarm icon
+- Click "Create Alert"
+- Edit the fields, see details below:
+![Monitoring](https://user-images.githubusercontent.com/1113398/71247974-bc5f4d80-2311-11ea-962b-6cc5f2e6989d.png "Telegram")
