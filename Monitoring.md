@@ -223,3 +223,13 @@ nano ~/.project name/config/config.toml
 Hit ```PgDn``` on your keyboard to get to the very bottom of the file and then set ```prometheus=true```
 
 ![Grafana]( https://miro.medium.com/max/561/1*EEYrRFP2WM-DFigHo8k0eA.png "config")
+
+After making changes to the configuration file, press Ctl + X, then the Y key, then the ENTER key.
+
+Let's open a port in the firewall so that the Prometheus server can connect to the port. If desired, you can change the port number in the config.toml file. Just make sure your firewall is open on that port too. The following command assumes that you are using port 22 for SSH. If you are not using port 22 then change the below command otherwise you will block access to your server.
+```
+sudo ufw allow proto tcp from any to any port 22
+sudo ufw allow proto tcp from any to any port 26656
+sudo ufw allow proto tcp from any to any port 26660
+sudo ufw enable
+```
