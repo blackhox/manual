@@ -184,3 +184,6 @@ Upload the JSON file that you downloaded earlier and then select the Prometheus 
 
 ![Grafana](https://miro.medium.com/max/669/1*68zF81CGtDWG8pHIbP_eQA.png "Import")
 
+Now you have a beautiful dashboard, but unfortunately it is not filled with any data yet.
+
+![Grafana](https://miro.medium.com/max/700/1*3qr4vNRhx-wwCN2dWTfVAw.png "Empty")
