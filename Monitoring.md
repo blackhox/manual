@@ -137,5 +137,9 @@ sudo ufw enable
 Now open a web browser and navigate to http://your.grafana.ip.address:3000 and you should see the Grafana logo start to bounce as the page loads. Your username is admin and your password is admin. If you don’t see the screen below, then your firewall is probably not open on port 3000 or you made a mistake somewhere in the previous steps.
 ![Grafana portal](https://miro.medium.com/max/580/1*T2Oul2EXu8GPAl7aoSUCMw.png "Portal")
 
-Once you log in, click on the little avatar icon on the bottom left of the screen and then change your password. Please do this. Please.
+Once you log in, click on the little avatar icon on the bottom left of the screen and then change your password. Please do this.
 ![Grafana login](https://miro.medium.com/max/414/1*4tpC-Mh3w7UJQ-nhe92FcQ.png "Login")
+
+After changing your password, open a new browser window and go here to download the standard Cosmos SDK Grafana toolbar. 
+You need to download the JSON file.
+![Grafana](https://miro.medium.com/max/700/1*NwtCIAlPjraQTt34RNBXHg.png "Dashdoard")
