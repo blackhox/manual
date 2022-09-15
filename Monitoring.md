@@ -162,4 +162,6 @@ If you went the path of having two servers, then enter the Prometheus IP address
 ![Grafana](https://miro.medium.com/max/700/1*VFHUSKPAtS7tq1ZhElc3IQ.png "Prometeus")
 
 Scroll to the bottom and click the Save & test button.
+
+
 ![Grafana](https://miro.medium.com/max/433/1*4z0B8er39lEfzAHZTFVMvw.png "Save")
