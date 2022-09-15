@@ -208,3 +208,10 @@ The IP address must match the Cosmos SDK node you are collecting data from. It c
 
 ![Grafana](https://miro.medium.com/max/700/1*QiVx2kyCQeOKgg2WBW6DCQ.png "SDK")
 
+Once you correctly paste your job in, press ```Ctl + X```, then the ```Y``` key, then the ```ENTER``` key.
+
+Restart the Prometheus service and it will start scraping data
+```
+sudo systemctl stop prometheus
+sudo systemctl start prometheus
+```
