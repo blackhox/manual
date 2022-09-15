@@ -154,3 +154,9 @@ Now click on ```Add data source``` then select the Prometheus data source.
 ![Grafana](https://miro.medium.com/max/613/1*l0vn_tFh0Zk010EZUpc0ag.png "Add")
 
 ![Grafana](https://miro.medium.com/max/700/1*3CIWWU4_C4E3pc3dK-L4Pw.png "Add")
+
+Now enter the IP address with port 9090. If you decided to run Prometheus and Grafana on the same server that’s fine. Just remember that we told you not to. Go ahead with http://localhost:9090
+
+If you went the path of having two servers, then enter the Prometheus IP address. For example http://150.220.60.42:9090
+
+![Grafana](https://miro.medium.com/max/700/1*VFHUSKPAtS7tq1ZhElc3IQ.png "Prometeus")
