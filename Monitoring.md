@@ -80,3 +80,11 @@ sudo systemctl status prometheus
 ```
 If Prometheus is running successfully, you should see a status screen that looks like this. Press CTL+C to exit the systemctl status screen.
 ![Prometeus logs](https://miro.medium.com/max/700/1*TYE67j8UZfUIl1OtpBDIIg.png "Log")
+
+Let's increase the server's security level a little more and turn on the firewall.
+If you are using the standard port 22 for SSH then it will be available and will be able to connect. If you are using a non-standard port for SSH, then change the command below to include the port, otherwise it will block access to the server.
+```
+sudo ufw allow proto tcp from any to any port 22
+sudo ufw allow proto tcp from any to any port 9090
+sudo ufw enable
+```
