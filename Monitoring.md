@@ -8,15 +8,15 @@ It will collect all the node monitoring parameters. Prometheus is a database tha
 To install the Prometheus server, it is strongly recommended to allocate a separate server, of course, you can run it along with other programs, but the performance of such a system may be impaired. It is strongly not recommended to run Prometheus on the same server as a sentry or validator, as this will lead to unnecessary load on the server, and the lack of system resources in turn will lead to block skipping.
 First of all, let's start the installation by updating the OS and installing security software: **fail2ban**
 It won't solve every possible security problem, but it's better than doing nothing at all.
-
-***sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt install fail2ban -y***
-
+```
+sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt install fail2ban -y
+```
 During the installation of updates to these packages, you may occasionally see a purple screen. Just press the ENTER button.
 After updating the Linux OS, create the prometheus user that will be used to run Prometheus.
 ```
-***sudo groupadd --system prometheus***
+sudo groupadd --system prometheus
 
-***sudo useradd -s /sbin/nologin --system -g prometheus prometheus***
+sudo useradd -s /sbin/nologin --system -g prometheus prometheus
 ```
 Let's remove everything unnecessary, and then download and install Prometheus.
 ```
