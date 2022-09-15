@@ -146,3 +146,5 @@ You need to download the JSON file.
 ![Grafana](https://miro.medium.com/max/700/1*NwtCIAlPjraQTt34RNBXHg.png "Dashdoard")
 
 Go back to the Grafana page and then click on ```Configuration``` and then ```Data Sources```
+
+![Grafana](https://miro.medium.com/max/414/1*g4cT7b2xGy119KzC7zedRA.png "Dashdoard")
