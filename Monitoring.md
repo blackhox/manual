@@ -305,4 +305,7 @@ https://api.telegram.org/bot<YOUR API TOKE FROM ABOVE>/getUpdates
 ```
 systemctl stop node_exporter
 ```
+- You will see message from bot firing
+-
 ![Monitoring](https://user-images.githubusercontent.com/50621007/161050843-889edc5e-4e27-4778-9010-b9e9e861cc74.png "Test")
+
