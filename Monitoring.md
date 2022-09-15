@@ -268,13 +268,13 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 ```
 **2. Create a Channel and retrieve the channel's chat ID**
 
-*Create a channel in telegram and name it whatever you like. e.g. NODEMonitoring or similar
+- Create a channel in telegram and name it whatever you like. e.g. NODEMonitoring or similar
 
-*Invite @BotFather to that channel as admin
+- Invite @BotFather to that channel as admin
 
-*Type at least one message, this is very important
+- Type at least one message, this is very important
 
-*Get the Chat id:
+- Get the Chat id:
 
 ```
 https://api.telegram.org/bot<YOUR API TOKE FROM ABOVE>/getUpdates
