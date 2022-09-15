@@ -127,3 +127,6 @@ sudo systemctl status grafana-server
 ```
 If the installation was successful, you will see the following picture on the screen. Press CTL+C to exit the systemctl status screen.
 ![Grafana logs](https://miro.medium.com/max/700/1*IVTzT2D9cawk2rQq-HdwpA.png "Log")
+
+Just like the Prometeus server, let's configure the firewall. If you are not using port 22 then change the below command otherwise you will block access to your server.
+
