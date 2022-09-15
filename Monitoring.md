@@ -222,4 +222,4 @@ nano ~/.project name/config/config.toml
 ```
 Hit ```PgDn``` on your keyboard to get to the very bottom of the file and then set ```prometheus=true```
 
-![Grafana]( https://miro.medium.com/max/561/1*EEYrRFP2WM-DFigHo8k0eA.png"config")
+![Grafana]( https://miro.medium.com/max/561/1*EEYrRFP2WM-DFigHo8k0eA.png "config")
