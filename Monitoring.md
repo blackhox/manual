@@ -169,3 +169,9 @@ Scroll to the bottom and click the Save & test button.
 If you entered the correct IP and your Prometheus firewall is open on port 9090 then you will see a connection success indicator.
 
 ![Grafana](https://miro.medium.com/max/423/1*RYD_plgkstMlW_IYXiboug.png "Attach")
+
+Ok, that was fun. Now click on ```Dashboardand``` then ```Manage```
+
+![Grafana](https://miro.medium.com/max/634/1*BmMOP3x4nsvi7pNEIv_Qtg.png "Manage")
+
+
