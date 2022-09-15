@@ -281,3 +281,13 @@ https://api.telegram.org/bot<YOUR API TOKE FROM ABOVE>/getUpdates
 {"ok":true,"result":[{"update_id":1112223334445,
 "channel_post":{"message_id":1,"chat":{"id":-<YOUR_CHAT_ID>,"title":"ShelleyMonitoring","type":"channel"},"date":1576534122,"text":"/bot","entities":[{"offset":0,"length":4,"type":"bot_command"}]}}]}
 ```
+## Config Telegram in Grafana ##
+- Login to grafana
+- Click to the left Bell icon
+- Add notification channel
+- Select Telegram
+- Enable/disable settings you preger
+- Put Telegram API token to he fiel
+- Add chat ID (it starts with -, and that needs too)
+- Click Test notification
+- Save it.
