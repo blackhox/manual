@@ -306,6 +306,11 @@ https://api.telegram.org/bot<YOUR API TOKE FROM ABOVE>/getUpdates
 systemctl stop node_exporter
 ```
 - You will see message from bot firing
--
-![Monitoring](https://user-images.githubusercontent.com/50621007/161050843-889edc5e-4e27-4778-9010-b9e9e861cc74.png "Test")
 
+![Monitoring](https://user-images.githubusercontent.com/50621007/161050843-889edc5e-4e27-4778-9010-b9e9e861cc74.png "Test")
+- Now you can start node-exporter service back
+```
+systemctl start node_exporter
+```
+- You will get confirmation from bot that issue is resolved
+![Monitoring](https://user-images.githubusercontent.com/50621007/161051501-6e87cbb1-6699-4557-81ed-9564db57a76f.png "Test")
