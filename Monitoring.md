@@ -24,6 +24,9 @@ sudo mkdir /var/lib/prometheus
 for i in rules rules.d files_sd; do sudo mkdir -p /etc/prometheus/${i}; done
 mkdir -p /tmp/prometheus && cd /tmp/prometheus
 curl -s https://api.github.com/repos/prometheus/prometheus/releases/latest | grep browser_download_url | grep linux-amd64 | cut -d '"' -f 4 | wget -qi -
+//or if the download fails
+wget https://github.com/prometheus/prometheus/releases/download/v2.32.1/prometheus-2.32.1.linux-amd64.tar.gz
+
 tar xvf prometheus*.tar.gz
 cd prometheus*/
 sudo mv prometheus promtool /usr/local/bin/
@@ -35,6 +38,8 @@ prometheus --version
 promtool --version
 ```
 Let's move some files like this:
+
+While in the tmp folder, run
 ```
 sudo mv prometheus.yml /etc/prometheus/prometheus.yml
 sudo mv consoles/ console_libraries/ /etc/prometheus/
