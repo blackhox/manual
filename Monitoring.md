@@ -13,11 +13,11 @@ It won't solve every possible security problem, but it's better than doing nothi
 
 During the installation of updates to these packages, you may occasionally see a purple screen. Just press the ENTER button.
 After updating the Linux OS, create the prometheus user that will be used to run Prometheus.
-
+```
 ***sudo groupadd --system prometheus***
 
 ***sudo useradd -s /sbin/nologin --system -g prometheus prometheus***
-
+```
 Let's remove everything unnecessary, and then download and install Prometheus.
 ```
 sudo mkdir /var/lib/prometheus
