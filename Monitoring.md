@@ -95,4 +95,4 @@ The next step is to launch a Grafana instance which will allow you to visualize 
 
 It is recommended to run a separate server for Grafana. Ultimately, Grafana will provide a web server to the public internet, and you are unlikely to want to pair it with your Prometheus server. If it is possible to install these two servers on the same local network, then this solution would be preferable. In this case, you can connect them privately without having to use the public Internet.
 
-Once we set up the Grafana server, we will also update it and install fail2ban. Again, this server is open to the internet, so consider additional security measures such as multi-factor authentication and no root login.
+Once we set up the Grafana server, we will also update it and install ```fail2ban```. Again, this server is open to the internet, so consider additional security measures such as ```multi-factor authentication``` and ```no root login```.
