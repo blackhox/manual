@@ -144,3 +144,7 @@ After changing your password, open a new browser window and go here to download 
 You need to download the JSON file.
 
 ![Grafana](https://miro.medium.com/max/700/1*NwtCIAlPjraQTt34RNBXHg.png "Dashdoard")
+
+Go back to the Grafana page and then click on ``Configuration```
+and then
+```Data Sources```
