@@ -78,3 +78,4 @@ sudo systemctl enable prometheus
 sudo systemctl start prometheus
 sudo systemctl status prometheus
 ```
+If Prometheus is running successfully, you should see a status screen that looks like this. Press CTL+C to exit the systemctl status screen.
