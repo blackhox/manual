@@ -66,3 +66,5 @@ After entering the data into the configuration file, run the feeder script vote.
 
 We look at the script logs, if everything went without errors, then we stop the execution of the script and run it either in Screen or in Tmux,
 or create an autorun daemon using third-party packages forever or PM2.
+# 5. Associate the feeder key with the validator
+```pryzmd tx oracle delegate-feed-consent [feeder-address] --from {address wallet validator} --fees 2000factory/pryzm15k9s9p0ar0cx27nayrgk6vmhyec3lj7vkry7rx/uusdsim,3000upryzm```
