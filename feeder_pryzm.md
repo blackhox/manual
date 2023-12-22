@@ -53,6 +53,10 @@ sudo apt install nodejs
 
 ```pryzmd keys add Name_key --recover```
 
+***Deposit tokens to the balance of the feeder wallet***
+
+https://testnet.pryzm.zone/faucet
+
 ***Go to the feeder directory***
 
 ```cd $HOME/feeder/```
