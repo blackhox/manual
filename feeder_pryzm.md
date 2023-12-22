@@ -59,7 +59,8 @@ tar -xvzf pryzm-feeder.tgz
 https://testnet.pryzm.zone/faucet
 
 ***We make changes to the app.toml configuration file***
-minimum-gas-prices = "0.015upryzm,0.01factory/pryzm15k9s9p0ar0cx27nayrgk6vmhyec3lj7vkry7rx/uusdsim"
+
+```minimum-gas-prices = "0.015upryzm,0.01factory/pryzm15k9s9p0ar0cx27nayrgk6vmhyec3lj7vkry7rx/uusdsim"```
 
 ***Go to the feeder directory***
 
