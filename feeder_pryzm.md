@@ -6,9 +6,9 @@ wget https://storage.googleapis.com/pryzm-zone/feeder/pryzm-feeder.tgz
 **Unpack:**
 tar -xvzf pryzm-feeder.tgz
 # 2. Installing Node.js and pnpm
-curl -sL https://deb.nodesource.com/setup_20.x -o nodesource_setup.sh
+```curl -sL https://deb.nodesource.com/setup_20.x -o nodesource_setup.sh```
 
-sudo apt install nodejs
+```sudo apt install nodejs```
 
 ***Checking the installation and version***
 
