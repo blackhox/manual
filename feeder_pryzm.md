@@ -62,6 +62,10 @@ https://testnet.pryzm.zone/faucet
 
 ```minimum-gas-prices = "0.015upryzm,0.01factory/pryzm15k9s9p0ar0cx27nayrgk6vmhyec3lj7vkry7rx/uusdsim"```
 
+***Check the configuration file config.toml so that the indexing value is:***
+
+```indexer = "kv"```
+
 ***Go to the feeder directory***
 
 ```cd $HOME/feeder/```
