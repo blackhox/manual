@@ -41,6 +41,7 @@ sudo apt install nodejs
 ***View a list of all databases:***
 
 ```sudo -u postgres psql```
+
 ```\l```
 
 ***Exit from Postgres console:***
